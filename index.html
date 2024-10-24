@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<body>
+    <h1 id="head">hello world</h1>
+    <p class="p1">Hello GANESH</p>
+    <pre></pre>
+
+    <script>
+        document.getElementById("head").innerHTML = "asdf"
+        document.getElementsByClassName("p1").innerHTML = "hello sai"
+        document.getElementsByTagName("pre").innerText = "hhi"
+
+        let head = document.getElementById('head');
+        head.attribute = "href"
+        head.style.color = "red"
+
+        console.log(document)
+
+        const para = document.createElement("p");
+        para.innerHTML = "hello";
+        console.log(para)
+
+        const heading = document.createElement("h2")
+        heading.innerText = "This is DOM";
+        console.log(heading)
+        document.body.append(heading)
+
+        document.write("heading")
+
+        var a = document.createElement("pre")
+        a.innerText = "hello this is java script"
+        a.style.color = "blue"
+        a.style.fontSize = "250%"
+        document.body.appendChild(a)
+        console.log(a)
+
+        var b = '       hello     '.trim()
+        console.log(b)
+        console.log(b.trimStart())
+        console.log(b.trimEnd())
+
+        let c = '   hello'.trimLeft()
+        console.log(c)
+
+        let d = 'hi    '.trimRight()
+        console.log(d)
+
+    </script>
+</body>
+
+</html>
